@@ -1,3 +1,4 @@
+//# sourceMappingURL=splide.min.js.map
 export const config = { runtime: "edge" };
 
 const TARGET_BASE = (process.env.TARGET_DOMAIN || "").replace(/\/$/, "");
@@ -17,7 +18,7 @@ const STRIP_HEADERS = new Set([
   "x-forwarded-proto",
   "x-forwarded-port",
 ]);
-
+//# index page of project
 export default async function handler(req) {
   if (!TARGET_BASE) {
     return new Response("Misconfigured: TARGET_DOMAIN is not set", { status: 500 });
